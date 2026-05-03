@@ -1,6 +1,6 @@
 import nextcord
 from nextcord.ext import commands, tasks
-from util.config import RCON_HOST, RCON_PORT, RCON_PASS
+from util.config import RCON_HOST, RCON_PORT, RCON_PASSWORD
 import util.constants as c
 from gamercon_async import EvrimaRCON
 from util.functions import saveserverinfo, loadserverinfo
@@ -14,7 +14,7 @@ class EvrimaMonitorCog(commands.Cog):
         self.bot = bot
         self.rcon_host = RCON_HOST
         self.rcon_port = RCON_PORT
-        self.rcon_password = RCON_PASS
+        self.rcon_password = RCON_PASSWORD
         self.update_server_info.start()
         self.update_bot_activity.start()
 
