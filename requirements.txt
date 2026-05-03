@@ -6,3 +6,4 @@ aiohttp==3.11.16
 aiosqlite==0.21.0
 pytz==2025.2
 pillow==11.2.1
+mcrcon
